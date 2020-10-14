@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+      @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:#222222;
+  background-size: cover;
+}
+
+form {
+	margin: 0 auto;
+    width: 400px;
+    padding-top:3rem;
+    padding-bottom: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    border: 2px solid #ccc;
+    box-shadow: 10px 10px #6e6e6e;
+    border-radius: 1em;
+    margin-top:15rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    
+}
+
+form li + li {
+    margin-top: 1em;
+    
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+    text-align: right;
+    color:#86F68C;
+    
+}
+
+input,
+textarea {
+	width: 300px;
+    box-sizing: border-box;
+    background-color:#222222;
+    border: 1px solid #222222;
+    color:whitesmoke;
+    opacity: 0.7;
+}
+
+input:focus,
+textarea:focus {
+    background-color:#222222;
+}
+
+textarea {
+	vertical-align: top;
+    height: 5em;
+    background-color:#222222;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: 1rem;
+    background-color:#222222;
+    border: 2px solid #86F68C;
+    color:#86F68C;
+    font-size: 130%;
+    border-radius:0.3rem;
+}
+
+
+button:hover, button2:hover{
+    color:#222222;
+    background-color:#86F68C;
+    transition: all .5s;
+}
+
+.useru{
+    width:380px;
+    height: 3px;
+    background-color:#86F68C;
+    opacity: 0.5;
+    margin-left:1rem;
+}
+
+.user{
+    font-size:140%;
+    margin-left:1rem;
+}
+
+.user:focus{
+    opacity: 1;
+    color:whitesmoke;
+    transition: 0.25s;
+    outline: none;
+}
+
+.passu{
+    width:380px;
+    height: 3px;
+    background-color:#86F68C;
+    opacity: 0.5;
+    margin-left:1rem;
+}
+
+.pass{
+    font-size:140%;
+    margin-left:1rem;
+    opacity: 1;
+    color:whitesmoke;
+    transition: 0.25s;
+    outline: none;
+}
+
+.buttontext{
+    padding-left:4rem;
+    padding-right:4rem;
+}
+
+.login-box{
+    color:whitesmoke;
+    text-align:center;
+    font-size:150%;
+}
+
+  </style>
+  <body>
+      
+    <form id = "overlaylogin" method="get">
+        <div class="login-box">
+            <h1>Login</h1>
+            </div>
+        <ul>
+            <li>
+                <input type="text" id="user" name="user_name" placeholder = "Username" class = "user"/>
+                <div class = "useru"></div>
+            </li>
+            <li>
+                <input type="password" id="pass" name="pass" placeholder = "Password" class = "pass" />
+                <div class = "passu"></div>
+            </li>
+
+            <li id = "sign" class="button">
+                <button type="submit" class = "buttontext" id = "button" onclick = "signIn()">Sign In</button>
+            </li>
+        </ul>
+    </form>
+</body>
+<script>
+
+var Username = document.getElementById('user');
+var pass = document.getElementById('pass')
+var sign = document.getElementById('sign')
+
+if (name == "The Owner"){
+    function signIn() {
+        
+    }
+}
+else{
+    
+}
+
+document.getElementById("overlaylogin").style.display = "block";
+
+</script>
+</html>
